@@ -6,3 +6,6 @@ It contains packages maintained by the solar community that aren't quite ready y
 
 (Note for core: System-related packages, such as the solar tools, belong in the solaros-nix repo)
 
+# Usage
+
+The channel can be directly imported/used as `<solarpkg>` (ex: `nix-env -iA solarpkg.jdownloader`) or be added as an overlay (`{ overlays = [ (import <solarpkg/pkgs/overlay.nix>) ]; }`)
